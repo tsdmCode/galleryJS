@@ -1,1 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+#thumbs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  /* width: 600px; */
+}
+#big {
+  height: 608px;
+  width: 617px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+}
